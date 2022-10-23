@@ -3,9 +3,9 @@
   "displayName": "ternaryExp-transform-if",
   "description": "",
   "publisher":"sroxck",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
-    "vscode": "^1.72.0"
+    "vscode": "^1.70.0"
   },
   "icon": "test.jpeg",
   "categories": [
@@ -57,7 +57,7 @@
     "@types/glob": "^8.0.0",
     "@types/mocha": "^10.0.0",
     "@types/node": "16.x",
-    "@types/vscode": "^1.72.0",
+    "@types/vscode": "^1.70.0",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
     "@vscode/test-electron": "^2.1.5",
