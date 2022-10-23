@@ -1,0 +1,76 @@
+{
+  "name": "ternaryexp-transform-if",
+  "displayName": "ternaryExp-transform-if",
+  "description": "",
+  "publisher":"sroxck",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "icon": "test.jpeg",
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/sroxck/vscode-extension-sims"
+	},
+  "activationEvents": [
+    "onCommand:vscode-ternaryexp-transform-if.transform"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-ternaryexp-transform-if.transform",
+        "title": "ternary transform if"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorFocus",
+          "command": "vscode-ternaryexp-transform-if.transform",
+          "group": "navigation"
+        }
+      ],
+      "editor/title": [
+        {
+          "when": "editorFocus",
+          "command": "vscode-ternaryexp-transform-if.transform",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vitest --run"
+  },
+  "devDependencies": {
+    "@babel/generator": "^7.19.6",
+    "@babel/types": "^7.19.4",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.72.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "@vscode/test-electron": "^2.1.5",
+    "eslint": "^8.24.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.19.6",
+    "@babel/traverse": "^7.19.6",
+    "@types/babel__generator": "^7.6.4",
+    "@types/babel__traverse": "^7.18.2",
+    "vitest": "^0.24.3"
+  }
+}
